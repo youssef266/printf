@@ -144,7 +144,7 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 
 	buffer[BUFF_SIZE - 1] = '\0';
 
-	while (num > 0)
+	while (num > -1)
 	{
 		buffer[i--] = map_to[num % 16];
 		num /= 16;
